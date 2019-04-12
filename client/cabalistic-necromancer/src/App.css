@@ -6,18 +6,31 @@ h1 {
 }
 h2 {
   font-weight: 200;
+  font-size: 20px;
+}
+button {
+  background-color: rgba(0,140,205,1);
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  border:0;
 }
 .App {
   text-align: center;
 }
-
 .Header {
   background-color: #009dc4;
-  padding: 10px 10px 10px 20px;
   position: fixed;
   width: 100vw;
+  height: 45px;
 }
-
+.App-logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
 #container {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -25,7 +38,6 @@ h2 {
   margin: 0 auto;
   height: 98vh;
 }
-
 .MainView {
   grid-column: 1/12;
   grid-row: 1/2;
@@ -36,30 +48,41 @@ h2 {
   max-height: 25vh;
   background: radial-gradient(circle at top,#62696f 0,#3b444b 100%);
 }
-
 .launchDiv {
-  grid-column: 6/7;
+  grid-column: 2/11;
   grid-row: 2/3;
+  height: 55vh;
 }
-
 .content {
   grid-column: 2/11;
   grid-row: 3/4;
 }
-
 .title {
   font-size: 50px;
   font-weight: 200;
 }
-
-.Footer {
-  grid-column: 1/12;
-  grid-row: 5/6;
-  background-color: #cccccc;
-  font-size: 10px;
-  height: 100px;
+.fullThought {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(5vh, auto);
+  margin: 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
+.empNameAndImg {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.employeeImg {
+  margin-top: 30px;
+}
+.currentBeerType {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.currentThoughtQuote {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.daydream {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }

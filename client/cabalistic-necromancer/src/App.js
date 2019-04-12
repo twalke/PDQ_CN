@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './App.css';
 import Header from "./Header";
 import MainView from "./MainView";
-import Footer from "./Footer";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
       <MainView />
-      <Footer />
     </div>
   )
 }

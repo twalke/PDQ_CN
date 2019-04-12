@@ -1,7 +1,6 @@
 import React from "react";
 
-import Button, {LaunchButton} from "./Button";
-import ThoughtData from "./ThoughtData";
+import DisplayThoughtButton from "./DisplayThoughtButton";
 
 function MainView() {
   return (
@@ -11,12 +10,8 @@ function MainView() {
         <p>How it works: Press the button and Cabalistic Necromancer will read the mind of a random employee here at PDQ.com</p>
       </div>
       <div className="launchDiv">
-        <LaunchButton>
-          Launch
-        </LaunchButton>
-        <ThoughtData />
+        <DisplayThoughtButton />
       </div>
-      <div className="content">Hello</div>
     </div>
   )
 }
